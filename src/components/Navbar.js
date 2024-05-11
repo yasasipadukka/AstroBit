@@ -17,9 +17,9 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-800">
-      <div className="max-w-7xl mx-auto flex justify-between p-6 ">
+      <div className="max-w-7xl mx-auto flex justify-between p-3">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="h-10 ml-7" />
+          <img src={logo} alt="Logo" className="h-7 ml-7" />
           <span className="text-4xl font-semibold text-white"></span>
         </Link>
 
@@ -49,10 +49,9 @@ const Navbar = () => {
           <ul className="font-medium flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse">
             <li className="ml-auto">
               {" "}
-              {/* Adjusted margin */}
               <Link
                 to="/"
-                className="block py-2 px-4 text-white text-xl rounded hover:bg-gray-700 "
+                className="block py-2 px-4 text-white text-lg rounded hover:bg-gray-700 "
               >
                 Home
               </Link>
@@ -60,7 +59,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/apod"
-                className="block py-2 px-3 text-white text-xl rounded hover:bg-gray-700"
+                className="block py-2 px-3 text-white text-lg rounded hover:bg-gray-700"
               >
                 Astronomy POD
               </Link>
@@ -68,7 +67,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/Marsrover"
-                className="block py-2 px-3 text-white text-xl rounded hover:bg-gray-700"
+                className="block py-2 px-3 text-white text-lg rounded hover:bg-gray-700"
               >
                 Mars Rover
               </Link>
@@ -76,13 +75,13 @@ const Navbar = () => {
             <li>
               <Link
                 to="/earth"
-                className="block py-2 px-3 text-white text-xl rounded hover:bg-gray-700 mr-16 "
+                className="block py-2 px-3 text-white text-lg rounded hover:bg-gray-700 mr-16 "
               >
                 Earth
               </Link>
             </li>
             <li>
-              <div className="block py-2 px-3 text-white bg-blue-900 text-xl rounded hover:bg-gray-700 ml-18 text-center">
+              <div className="block py-2 px-3 text-white bg-blue-900 text- rounded hover:bg-gray-700 ml-18 text-center">
                 <SignedOut>
                   <SignInButton />
                 </SignedOut>
@@ -102,7 +101,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/"
-              className="block py-2 px-3 text-white text-xl rounded hover:bg-gray-700"
+              className="block py-2 px-3 text-white text-lg rounded hover:bg-gray-700"
             >
               Home
             </Link>
@@ -110,7 +109,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/apod"
-              className="block py-2 px-3 text-white text-xl rounded hover:bg-gray-700"
+              className="block py-2 px-3 text-white text-lg rounded hover:bg-gray-700"
             >
               Astronomy POD
             </Link>
@@ -118,7 +117,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/Marsrover"
-              className="block py-2 px-3 text-white text-xl rounded hover:bg-gray-700"
+              className="block py-2 px-3 text-white text-lg rounded hover:bg-gray-700"
             >
               Mars Rover
             </Link>
@@ -126,13 +125,13 @@ const Navbar = () => {
           <li>
             <Link
               to="/earth"
-              className="block py-2 px-3 text-white text-xl rounded hover:bg-gray-700 mr-16 "
+              className="block py-2 px-3 text-white text-lg rounded hover:bg-gray-700 mr-16 "
             >
               Earth
             </Link>
           </li>
           <li>
-            <div className="block py-2 px-3 text-white bg-blue-900 text-xl rounded hover:bg-gray-700 ml-18 text-center">
+            <div className="block py-2 px-3 text-white bg-blue-900 text-lg rounded hover:bg-gray-700 ml-18 text-center">
               <SignedOut>
                 <SignInButton />
               </SignedOut>

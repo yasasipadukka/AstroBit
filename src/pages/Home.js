@@ -12,15 +12,15 @@ const Home = () => {
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-start",
-        alignItems: "flex-start",
-        padding: "280px 50px 0",
+        //justifyContent: "flex-start",
+        //alignItems: "flex-start",
+        padding: "210px 40px 0",
       }}
     >
       <div>
         {/* Title */}
         <h1
-          className="mb-2 text-4xl md:text-8xl lg:text-7xl text-white font-bold"
+          className="mb-10 text-4xl md:text-7xl lg:text-5xl text-white font-bold mt-0 "
           style={{
             position: "relative",
             zIndex: 1, // Ensuring title is in front of the background
@@ -31,7 +31,7 @@ const Home = () => {
 
         {/* Subtitle */}
         <p
-          className="mb-8 text-lg md:text-4xl text-white"
+          className="mb-8 text-base md:text-2xl text-white"
           style={{
             position: "relative",
             zIndex: 1, // Ensuring subtitle is in front of the background
@@ -52,11 +52,11 @@ const Home = () => {
               className="btn btn-home btn-lg bg-blue-900"
               style={{
                 borderRadius: 7,
-                width: "160px",
-                height: "50px",
+                width: "110px",
+                height: "35px",
                 color: "white",
-                fontSize: "19px",
-                marginTop: "40px",
+                fontSize: "13px",
+                marginTop: "20px",
               }}
             >
               Explore more

@@ -101,14 +101,14 @@ const MarsRoverPhotos = () => {
       }}
     >
       <div className="container mx-auto px-4 py-8">
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-white ">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white ">
           Mars Rover Photos
         </h2>
         <div className="flex flex-col md:flex-row justify-center mb-4 items-center">
           <label
             htmlFor="cameraSelect"
             className="mr-0 md:mr-7 font-semibold text-white text-xl md:text-2xl mt-3 md:mt-0"
-            style={{ fontSize: "clamp(16px, 4vw, 20px)" }}
+            style={{ fontSize: "clamp(16px, 4vw, 17px)" }}
           >
             Select the camera type
           </label>
@@ -116,7 +116,7 @@ const MarsRoverPhotos = () => {
             id="cameraSelect"
             value={selectedCamera}
             onChange={handleCameraChange}
-            className="p-3 border border-gray-300 rounded-md w-full md:w-auto"
+            className="p-2 border border-gray-300 rounded-md w-full md:w-auto"
           >
             <option value="">All Rovers photos</option>
             {sortedCameraOptions.map((camera) => (
@@ -127,28 +127,30 @@ const MarsRoverPhotos = () => {
           </select>
         </div>
         {isLoading ? (
-          <p className="text-center text-white text-xl">Loading...</p>
+          <p className="text-center text-white text-base">Loading...</p>
         ) : (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8 mt-12">
               {currentPhotos.map((photo) => (
                 <div
                   key={photo.id}
-                  className="bg-white rounded-lg overflow-hidden shadow-md p-4"
+                  className="bg-white rounded-lg overflow-hidden shadow-md p-3"
                 >
                   <img
-                    className="w-full"
+                    className="w-80px"
                     src={photo.img_src}
                     alt={`Mars Rover Photo - ${photo.id}`}
                   />
                   <div className="mt-4">
-                    <h3 className="text-lg md:text-xl font-semibold mb-2">
+                    <h3 className="text-lg md:text-lg font-semibold mb-2">
                       {photo.camera.full_name}
                     </h3>
-                    <p className="text-gray-600 mb-2">
+                    <p className="text-gray-600 mb-2 text-sm">
                       Earth Date: {photo.earth_date}
                     </p>
-                    <p className="text-gray-600">Rover: {photo.rover.name}</p>
+                    <p className="text-gray-600 text-sm">
+                      Rover: {photo.rover.name}
+                    </p>
                   </div>
                 </div>
               ))}

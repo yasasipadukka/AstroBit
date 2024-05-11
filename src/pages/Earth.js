@@ -66,24 +66,24 @@ const Epic = () => {
         padding: "50px 10px ",
       }}
     >
-      <h2 className="text-5xl font-bold text-center mb-8 text-white mt-6">
+      <h2 className="text-4xl font-bold text-center mb-8 text-white mt-2">
         Earth Polychromatic Imaging Camera (EPIC)
       </h2>{" "}
-      <div className="flex justify-center items-center space-x-12 md:mb-4">
+      <div className="flex justify-center items-center space-x-12 md:mb-6">
         <div>
           <input
             type="date"
             value={date}
             onChange={handleDateChange}
-            className="p-2 border border-gray-300 rounded-lg text-center text-black"
+            className="p-1 border border-gray-300 rounded-lg text-center text-black"
             min="2015-09-01"
             max={new Date().toISOString().split("T")[0]}
           />
         </div>
-        <div className="ml-4">
+        <div className="ml-4 text-base">
           <button
             onClick={handleToggleAutoplay}
-            className={`bg-gray-600 hover:bg-gray text-white font-bold py-2 px-6 rounded ${
+            className={`bg-gray-600 hover:bg-gray text-white  font-bold py-2 px-5 rounded ${
               autoplay ? "bg-red-500 hover:bg-red-700" : ""
             }`}
           >
@@ -101,7 +101,7 @@ const Epic = () => {
             className="mx-auto max-w-full h-auto px-6 py-2 lg:px-28"
             style={{ maxHeight: "70vh" }}
           />
-          <p className="mt-2 text-sm lg:text-lg text-white">
+          <p className="mt-2 text-xs lg:text-sm text-white">
             {images[currentIndex].caption}
           </p>
         </div>
